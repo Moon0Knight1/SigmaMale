@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABOUT</title>
+    <style>
+        body, h1, h2, h3, p, img {
+          margin: 0;
+          padding: 0;
+        }
+        section {
+      background-color: #f9f9f9; /* Set background color for other sections */
+      padding: 20px;
+      height: 100vh;
+      position: fixed;
+      top: 10vh;
+    }
+    .top-bar {
+      background-color:white;
+      color: black;
+      padding: 10px 20px;
+      height: 7vh;
+      width: 100%;
+      position: fixed;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .logo {
+      font-size: 24px;
+    }
+    .sidebar {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color:black;
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 60px;
+    }
+    .sidebar a {
+      padding: 10px;
+      text-decoration: none;
+      font-size: 22px;
+      color: white;
+      display: block;
+      transition: 0.3s;
+    }
+    .sidebar a:hover {
+      color: #f1f1f1;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #333;
+      color: white;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+    }
+
+    .toggle-btn {
+      position: fixed;
+      top: 14px;
+      left: 20px;
+      background-color:WHITE;
+      color: BLACK;
+      border: none;
+      cursor: pointer;
+      padding: 10px 15px;
+      z-index: 2;
+    }
+    .close-btn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+    }
+        </style>
+</head>
+<body>
+    <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="logo">SIGMA MALE</div>
+    <button class="toggle-btn" onclick="openNav()">&#9776;</button>
+  </div>
+
+  <!-- Sidebar -->
+  <div class="sidebar" id="sidebar">
+    <a href="javascript:void(0)" class="close-btn" onclick="closeNav()">&times;</a>
+    <a href="Home.html">Home</a>
+    <a href="MALEC.html">Male Collection</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+    <section id="about" style="background-color: white">
+        <h2 style="text-align: center;">About Us</h2>
+        <p style="text-align: center;">Sigma Male Clothing is an online store dedicated to curating a wardrobe for the modern, independent man who embraces individuality and confidence. The sigma male persona stands out as a strong, self-reliant figure, distinct from the traditional social hierarchy, and Sigma Male Clothing aims to reflect that ethos in every piece offered. With a wide range of options, from classic staples like minimalist tees and rugged jeans to sharp, tailored blazers, and versatile outerwear, this store emphasizes quality and timeless style over fleeting trends. Sigma Male Clothing is crafted with attention to detail, ensuring each item is comfortable, durable, and suitable for a variety of occasions. By choosing high-quality materials and refined designs, they offer pieces that exude a cool confidence without appearing overly polished or contrived. Their collection also includes accessories like leather belts, understated watches, and practical backpacks—everything a man needs to complement his look with subtlety and elegance. Whether shopping for business-casual essentials, weekend wear, or functional outerwear, Sigma Male Clothing provides an effortless solution for men looking to define their own style path.</p>
+      </section>
+
+
+      <footer>
+        <p>&copy; 2024 Delicious Delights. All rights reserved.</p>
+      </footer>
+      
+
+      <script>
+        function openNav() {
+          document.getElementById("sidebar").style.width = "250px";
+        }
+    
+        function closeNav() {
+          document.getElementById("sidebar").style.width = "0";
+        }
+      </script>
+</body>
+</html>

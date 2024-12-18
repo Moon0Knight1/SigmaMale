@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sigma Male</title>
+
+  <!-- Meta tags for SEO keywords -->
+  <meta name="description" content="Sigma Male - High-quality men's clothing, t-shirts, fashion accessories, and more. Discover stylish, affordable apparel for every occasion.">
+  <meta name="keywords" content="Sigma Male, men's clothing, fashion, t-shirts, Sigma t-shirts, men’s apparel, stylish men, clothing store, affordable fashion, casual wear, men’s style, online shopping, fashion for men, modern wear, men's accessories, premium quality, Sigma apparel, trendy clothes, Sigma Male store, classic wear">
+
+  <style>
+    /* Basic Reset for Elements */
+    body, h1, h2, h3, p, img {
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Style for the top navigation bar */
+    .top-bar {
+      background-color: white;
+      color: black;
+      padding: 10px 20px;
+      height: 7vh;
+      width: 100%;
+      position: fixed;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* Style for the logo text */
+    .logo {
+      font-size: 28px;
+    }
+
+    /* Full-height header with background image */
+    header {
+      height: 100vh;
+      background-image: url('M2.jpg'); /* Background image */
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: black;
+      text-align: center;
+    }
+
+    /* Sidebar styling */
+    .sidebar {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: black;
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 60px;
+    }
+
+    /* Sidebar link styling */
+    .sidebar a {
+      padding: 10px;
+      text-decoration: none;
+      font-size: 22px;
+      color: white;
+      display: block;
+      transition: 0.3s;
+    }
+
+    /* Change sidebar link color on hover */
+    .sidebar a:hover {
+      color: #f1f1f1;
+    }
+
+    /* Main content area */
+    main {
+      padding: 20px;
+    }
+
+    /* Styling for each section */
+    section {
+      margin-bottom: 40px;
+      background-color: #f9f9f9;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    /* Flex container for menu items */
+    .menu-items {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    /* Style for individual menu items */
+    .menu-item {
+      flex: 0 0 calc(20% - 20px);
+      margin: 10px;
+      text-align: center;
+    }
+
+    /* Image styling within menu items */
+    .menu-item img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    /* Footer styling */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #333;
+      color: white;
+    }
+
+    /* Close button in sidebar */
+    .close-btn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+    }
+
+    /* Sidebar toggle button styling */
+    .toggle-btn {
+      position: fixed;
+      top: 14px;
+      left: 20px;
+      background-color: white;
+      color: black;
+      border: none;
+      cursor: pointer;
+      padding: 10px 15px;
+      z-index: 2;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Bar with Logo and Toggle Button -->
+  <div class="top-bar">
+    <div class="logo">SIGMA MALE</div>
+    <button class="toggle-btn" onclick="openNav()">&#9776;</button>
+  </div>
+
+  <!-- Sidebar Navigation Links -->
+  <div class="sidebar" id="sidebar">
+    <a href="javascript:void(0)" class="close-btn" onclick="closeNav()">&times;</a>
+    <a href="Home.html">Home</a>
+    <a href="MALEC.html">Male Collection</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <!-- Full-screen Header Banner -->
+  <header>
+    <div class="banner">
+      <h1></h1>
+      <p></p>
+    </div>
+  </header>
+
+  <!-- Main Section with Collection Menu -->
+  <main>
+    <section id="menu">
+      <h2 style="display: grid; justify-content: center;">MALE COLLECTION</h2>
+      <div class="menu-items">
+        
+        <!-- Menu Item 1 with keywords in alt text -->
+        <div class="menu-item">
+          <a href="order.html">
+            <img src="1.jpg" alt="Black T-Shirt for Men - Sigma Male Collection">
+          </a>
+          <h3>T SHIRT</h3>
+          <h3>1000 RS</h3>
+          <p>Black T-shirt for boys</p>
+        </div>
+
+        <!-- Menu Item 2 -->
+        <div class="menu-item">
+          <img src="2.jpg" alt="White T-Shirt for Men - Sigma Male">
+          <h3>T-SHIRT WHITE</h3>
+          <h3>350 RS</h3>
+          <p>White T-shirt for boys</p>
+        </div>
+
+        <!-- Menu Item 3 -->
+        <div class="menu-item">
+          <img src="3.jpg" alt="Affordable T-Shirt for Men - Sigma Male Clothing">
+          <h3>T-SHIRT</h3>
+          <h3>250 RS</h3>
+          <p>T-shirt for boys</p>
+        </div>
+
+        <!-- Menu Item 4 -->
+        <div class="menu-item">
+          <img src="4.jpg" alt="Premium Black T-Shirt for Men - Sigma Male Collection">
+          <h3>BLACK T-SHIRT</h3>
+          <h3>1600 RS</h3>
+          <p>For boys</p>
+        </div>
+
+        <!-- Link to more items -->
+        <div class="menu-item">
+          <a href="MALEC.html">
+            <img src="5.jpg" alt="Explore More Men’s Clothing at Sigma Male">
+          </a>
+          <h3>MORE</h3>
+          <p>Explore more items on the main page</p>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer with Sitemap Link -->
+  <footer>
+    <p>&copy; 2024 Sigma Male Clothing. All rights reserved.</p>
+    <a href="sitemap.html">Sitemap</a>
+  </footer>
+
+  <script>
+    function openNav() {
+      document.getElementById("sidebar").style.width = "250px";
+    }
+
+    function closeNav() {
+      document.getElementById("sidebar").style.width = "0";
+    }
+  </script>
+</body>
+</html>

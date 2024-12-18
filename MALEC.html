@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SIGMA MALE-clothing</title>
+  <meta name="keywords" content="Sigma Male, men's fashion, men's clothing, t-shirts for men, black t-shirt, white t-shirt, formal wear, casual wear, stylish clothing, modern fashion, affordable prices, boys' fashion, classy outfits, unique styles, premium fabrics, men's suits, trendy outfits, signature style, wardrobe essentials, men's casuals, fashion trends">
+  <style>
+    body, h1, h2, h3, p, img {
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Style the top bar */
+    .top-bar {
+      background-color: white;
+      color: black;
+      padding: 10px 20px;
+      height: 7vh;
+      width: 100%;
+      position: fixed;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* Style the logo */
+    .logo {
+      font-size: 28px;
+    }
+
+    /* Style the sidebar */
+    .sidebar {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: black;
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 60px;
+    }
+
+    /* Style sidebar links */
+    .sidebar a {
+      padding: 10px;
+      text-decoration: none;
+      font-size: 22px;
+      color: white;
+      display: block;
+      transition: 0.3s;
+    }
+
+    /* Style links on hover */
+    .sidebar a:hover {
+      color: #f1f1f1;
+    }
+
+    /* Style the main sections */
+    main {
+      padding: 20px;
+    }
+
+    section {
+      margin-bottom: 40px;
+      background-color: #f9f9f9; /* Set background color for other sections */
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    /* Style the menu items */
+    .menu-items {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .menu-item {
+      flex: 0 0 calc(20% - 20px); /* 20% width with 20px margin */
+      margin: 10px;
+      text-align: center;
+    }
+
+    .menu-item img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    /* Style the footer */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #333;
+      color: white;
+    }
+
+    /* Style the close button */
+    .close-btn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+    }
+
+    /* Style the toggle button */
+    .toggle-btn {
+      position: fixed;
+      top: 14px;
+      left: 20px;
+      background-color: white;
+      color: black;
+      border: none;
+      cursor: pointer;
+      padding: 10px 15px;
+      z-index: 2;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="logo">SIGMA MALE</div>
+    <button class="toggle-btn" onclick="openNav()">&#9776;</button>
+  </div>
+
+  <!-- Sidebar -->
+  <div class="sidebar" id="sidebar">
+    <a href="javascript:void(0)" class="close-btn" onclick="closeNav()">&times;</a>
+    <a href="Home.html">Home</a>
+    <a href="MALEC.html">Male Collection</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <header>
+    <div class="banner">
+      <h1></h1>
+      <p></p>
+    </div>
+  </header>
+
+  <main>
+    <section id="menu">
+      <h2 style="display: grid; justify-content: center;">MALE COLLECTION</h2>
+      <div class="menu-items">
+        <div class="menu-item">
+          <a href="order.html">
+            <img src="1.jpg" alt="Black T-shirt for men, stylish black shirt for boys">
+          </a>
+          <h3>T SHIRT</h3>
+          <h3>1000RS</h3>
+          <p>BLACK T-SHIRT FOR BOYS</p>
+        </div>
+        <div class="menu-item">
+          <img src="2.jpg" alt="White T-shirt for men, casual summer shirt for boys">
+          <h3>T-SHIRT WHITE</h3>
+          <h3>350RS</h3>
+          <p>WHITE T-SHIRT FOR BOYS</p>
+        </div>
+        <div class="menu-item">
+          <img src="3.jpg" alt="Casual T-shirt for boys, affordable everyday wear">
+          <h3>T-SHIRT</h3>
+          <h3>250RS</h3>
+          <p>T-SHIRT FOR BOYS</p>
+        </div>
+        <div class="menu-item">
+          <img src="4.jpg" alt="High-quality black T-shirt for men">
+          <h3>BLACK T-SHIRT</h3>
+          <h3>1600RS</h3>
+          <p>FOR BOYS</p>
+        </div>
+        <div class="menu-item">
+          <img src="5.jpg" alt="T-shirt collection, boys casual fashion">
+          <h3>T-SHIRT</h3>
+          <p>ONLY FOR BOYS</p>
+        </div>
+        <div class="menu-item">
+          <img src="6.jpg" alt="Formal Sigma Suit, exclusive male fashion">
+          <h3>SIGMA SUITE</h3>
+          <h3>33350RS</h3>
+          <p>SUIT FOR SIGMA MAKE</p>
+        </div>
+        <div class="menu-item">
+          <img src="7.jpg" alt="Classic black suit for men">
+          <h3>SUIT</h3>
+          <h3>33350RS</h3>
+          <p>BLACK SUIT FOR MALE</p>
+        </div>
+        <div class="menu-item">
+          <img src="8.jpg" alt="Sophisticated black suit for special occasions">
+          <h3>BLACK SUIT</h3>
+          <h3>33350RS</h3>
+          <p>Elegant black suit for men</p>
+        </div>
+        <div class="menu-item">
+          <img src="9.jpg" alt="Formal suit collection for male wardrobe">
+          <h3>SUIT</h3>
+          <h3>33350RS</h3>
+          <p>SUIT FOR MALES</p>
+        </div>
+        <div class="menu-item">
+          <img src="10.jpg" alt="Formal suit for business and class events">
+          <h3>FORMAL SUIT</h3>
+          <h3>45350RS</h3>
+          <p>SUIT FOR MALE FOR THE CLASS</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2024 SIGMA MALE. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function openNav() {
+      document.getElementById("sidebar").style.width = "250px";
+    }
+
+    function closeNav() {
+      document.getElementById("sidebar").style.width = "0";
+    }
+  </script>
+</body>
+</html>
